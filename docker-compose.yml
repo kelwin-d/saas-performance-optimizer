@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  saas-performance-optimizer:
+    build: ./saas-performance-optimizer
+    ports:
+      - "8002:8000"
+    volumes:
+      - ./saas-performance-optimizer:/app
+    restart: always
